@@ -47,7 +47,7 @@ int menu()
 	printf("3 - Sair\n\n");
 	// Solicita a opção
 	printf("Digite o numero da opcao desejada: ");
-	scanf_s("%d", &opcao);
+	scanf("%d", &opcao);
 	while ((c = getchar()) != '\n' && c != EOF)
 	{
 	}
@@ -113,11 +113,11 @@ void listar()
 		return;
 	}
 
-	printf_s("--- Lista de Musicas ---\n");
+	printf("--- Lista de Musicas ---\n");
 
 	while (ElementoVarredura != NULL)
 	{
-		printf_s("Nome: %s, Artista: %s, Duracao: %d\n",
+		printf("Nome: %s, Artista: %s, Duracao: %d\n",
 				 ElementoVarredura->nome,
 				 ElementoVarredura->artista_banda,
 				 ElementoVarredura->duracao);
